@@ -11,7 +11,10 @@ public class CustomListTest {
 
         assertTrue(list.hasCity(calgary));
 
+        assertEquals(1, list.countCities());
+
         list.deleteCity(calgary);
         assertFalse(list.hasCity(calgary));
+        assertEquals(0, list.countCities());
     }
 }
